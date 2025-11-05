@@ -24,7 +24,12 @@ function TodoApp() {
             <button onClick={handleAdd}>Add</button>
             <ul style={{ listStyle: "none", padding: 0 }}>
                 {todos.map((todo, index) => (
-                    <li key={index}>{todo}</li>
+                    <li key={index}>
+                        {todo}{""}
+                        <button onClick={() => setTodos(todos.filter((_, i) => i !== index))}>
+                            ❌
+                        </button>
+                    </li>
                 ))}
             </ul>
         </div>

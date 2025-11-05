@@ -3,7 +3,7 @@ import TodoApp from "./TodoApp";
 function App() {
   return (
     <div>
-      <h1>React PlayGround 😁</h1>
+      <h1>React Todo-App</h1>
       <TodoApp />
     </div>
   );
